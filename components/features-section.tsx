@@ -43,7 +43,7 @@ const features = [
   },
   {
     title: "Compact & Stylish",
-    description: "A discreet, everyday wearable ring.",
+    description: "A discrete, everyday wearable ring.",
     icon: BsMagic,
     color: "bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 font-bold",
     image: "/placeholder.svg?height=300&width=300",

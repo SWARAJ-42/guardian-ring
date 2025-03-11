@@ -43,6 +43,9 @@ export default function Navbar() {
             <Link href="/#team" className="text-foreground/80 hover:text-foreground transition-colors">
               Our Team
             </Link>
+            <Link href="/dashboard" className="text-foreground/80 hover:text-foreground transition-colors">
+              Dashboard
+            </Link>
             <Link className="p-2 rounded-lg bg-gradient-to-r from-purple-600 to-teal-500 hover:from-purple-700 hover:to-teal-600 text-white font-semibold" href={"/login"}>Login/Register</Link>
           </nav>
 

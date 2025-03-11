@@ -41,7 +41,7 @@ export default function TeamSection() {
           </p>
         </div>
 
-        <div className="flex justify-center items-center">
+        <div className="flex lg:flex-row flex-col justify-center items-center">
           {team.map((member, index) => (
             <motion.div
               key={index}
@@ -49,7 +49,7 @@ export default function TeamSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-[450px] mx-2"
+              className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-[450px] m-2"
             >
               <div className="relative h-64 overflow-hidden">
                 <Image src={member.image} alt={member.name} className="object-fit" />

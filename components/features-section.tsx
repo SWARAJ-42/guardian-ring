@@ -1,46 +1,53 @@
 "use client"
 
 import { useRef } from "react"
-import Image from "next/image"
 import { motion, useInView } from "framer-motion"
-import { Bell, MapPin, Smartphone, Heart, Shield } from "lucide-react"
+import { MapPin, Heart, AlertCircle, Mic2, BellIcon } from "lucide-react"
+import { BsMagic } from "react-icons/bs"
 
 const features = [
   {
-    title: "Emergency Alerts",
-    description: "Send instant notifications to your 5 trusted contacts with a single press of the button.",
-    icon: Bell,
-    color: "bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400",
-    image: "/placeholder.svg?height=300&width=300",
-  },
-  {
-    title: "GPS Location Tracking",
-    description: "Share your real-time location with trusted contacts during emergencies.",
-    icon: MapPin,
-    color: "bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400",
-    image: "/placeholder.svg?height=300&width=300",
-  },
-  {
-    title: "Mobile App Control",
-    description: "Customize all features and manage your emergency contacts through our intuitive app.",
-    icon: Smartphone,
-    color: "bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400",
-    image: "/placeholder.svg?height=300&width=300",
-  },
-  {
-    title: "Health Monitoring on distress",
-    description: "Track vital signs and detect unusual patterns that might indicate distress.",
+    title: "Pulse & Stress Monitoring",
+    description: "Detects abnormal heart rate and stress conditions.",
     icon: Heart,
-    color: "bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400",
+    color: "bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 font-bold",
     image: "/placeholder.svg?height=300&width=300",
   },
   {
-    title: "Compact and lightweight",
-    description: "Elegant jewelry design that conceals advanced safety technology.",
-    icon: Shield,
-    color: "bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400",
+    title: "AI Distress Detection",
+    description: "Differentiates workouts from real distress situations.",
+    icon: AlertCircle,
+    color: "bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 font-bold",
     image: "/placeholder.svg?height=300&width=300",
   },
+  {
+    title: "GPS & Live Tracking",
+    description: "Sends real-time location to emergency contacts.",
+    icon: MapPin,
+    color: "bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-bold",
+    image: "/placeholder.svg?height=300&width=300",
+  },
+  {
+    title: "Microphone Activation",
+    description: "Records and transmits audio in emergencies.",
+    icon: Mic2,
+    color: "bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 font-bold",
+    image: "/placeholder.svg?height=300&width=300",
+  },
+  {
+    title: "Automated Alerts",
+    description: "Sends SOS messages without manual input.",
+    icon: BellIcon,
+    color: "bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 font-bold",
+    image: "/placeholder.svg?height=300&width=300",
+  },
+  {
+    title: "Compact & Stylish",
+    description: "A discreet, everyday wearable ring.",
+    icon: BsMagic,
+    color: "bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 font-bold",
+    image: "/placeholder.svg?height=300&width=300",
+  }
 ]
 
 export default function FeaturesSection() {
@@ -58,7 +65,7 @@ export default function FeaturesSection() {
           </p>
         </div>
 
-        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -74,7 +81,7 @@ export default function FeaturesSection() {
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-muted-foreground">{feature.description}</p>
               </div>
-              <div className="relative h-48 overflow-hidden">
+              {/* <div className="relative h-48 overflow-hidden">
                 <Image
                   src={feature.image || "/placeholder.svg"}
                   alt={feature.title}
@@ -82,13 +89,13 @@ export default function FeaturesSection() {
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
+              </div> */}
             </motion.div>
           ))}
         </div>
 
         <div className="mt-20">
-          <div className="bg-gradient-to-r from-[#5C1749] to-[#E23288] rounded-2xl overflow-hidden shadow-xl">
+          <div className="bg-gradient-to-r from-purple-600 to-teal-500 rounded-2xl overflow-hidden shadow-xl">
             <div className="grid md:grid-cols-2 items-center">
               <div className="p-8 md:p-12">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">How GuardianRing Works</h3>
@@ -126,14 +133,6 @@ export default function FeaturesSection() {
                     <p>Optional audio recording captures environmental sounds for evidence</p>
                   </li>
                 </ul>
-              </div>
-              <div className="relative h-full min-h-[300px]">
-                <Image
-                  src="/placeholder.svg?height=600&width=600"
-                  alt="GuardianRing in action"
-                  fill
-                  className="object-cover"
-                />
               </div>
             </div>
           </div>

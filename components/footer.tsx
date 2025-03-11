@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <Link
               href="/"
-              className="text-2xl font-bold bg-gradient-to-r from-[#5C1749] to-[#E23288] bg-clip-text text-transparent mb-4 inline-block"
+              className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-teal-400 bg-clip-text text-transparent mb-4 inline-block"
             >
               GuardianRing
             </Link>
@@ -19,16 +19,16 @@ export default function Footer() {
               Empowering women with innovative safety technology that provides peace of mind and confidence.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-500 hover:text-[#4F143F] transition-colors">
+              <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-500 hover:text-[#4F143F] transition-colors">
+              <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-500 hover:text-[#4F143F] transition-colors">
+              <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-500 hover:text-[#4F143F] transition-colors">
+              <a href="#" className="text-gray-500 hover:text-purple-600 transition-colors">
                 <Youtube size={20} />
               </a>
             </div>
@@ -38,27 +38,22 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#features" className="text-muted-foreground hover:text-[#4F143F] transition-colors">
+                <Link href="#features" className="text-muted-foreground hover:text-purple-600 transition-colors">
                   Features
                 </Link>
               </li>
               <li>
-                <Link href="#how-it-works" className="text-muted-foreground hover:text-[#4F143F] transition-colors">
-                  How It Works
-                </Link>
-              </li>
-              <li>
-                <Link href="#testimonials" className="text-muted-foreground hover:text-[#4F143F] transition-colors">
+                <Link href="#testimonials" className="text-muted-foreground hover:text-purple-600 transition-colors">
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="#pricing" className="text-muted-foreground hover:text-[#4F143F] transition-colors">
+                <Link href="#pricing" className="text-muted-foreground hover:text-purple-600 transition-colors">
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link href="#faq" className="text-muted-foreground hover:text-[#4F143F] transition-colors">
+                <Link href="#faq" className="text-muted-foreground hover:text-purple-600 transition-colors">
                   FAQ
                 </Link>
               </li>
@@ -69,20 +64,20 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-[#4F143F] mt-0.5" />
+                <MapPin className="h-5 w-5 text-purple-600 mt-0.5" />
                 <span className="text-muted-foreground">
-                  123 Safety Street, Tech Park
+                  IIT Kharagpur, West Bengal
                   <br />
-                  San Francisco, CA 94107
+                  India
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-[#4F143F]" />
-                <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                <Phone className="h-5 w-5 text-purple-600" />
+                <span className="text-muted-foreground">+91 7257 994649</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-[#4F143F]" />
-                <span className="text-muted-foreground">info@guardianring.com</span>
+                <Mail className="h-5 w-5 text-purple-600" />
+                <span className="text-muted-foreground">sayandutta.iitkgp@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -94,7 +89,7 @@ export default function Footer() {
             </p>
             <div className="space-y-3">
               <Input type="email" placeholder="Your email address" />
-              <Button className="w-full bg-gradient-to-r from-[#5C1749] to-[#E23288] hover:from-[#92457f] hover:to-[#eb75ae]">
+              <Button className="w-full bg-gradient-to-r from-purple-600 to-teal-500 hover:from-purple-700 hover:to-teal-600">
                 Subscribe
               </Button>
             </div>
@@ -107,13 +102,13 @@ export default function Footer() {
               © {new Date().getFullYear()} GuardianRing. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <Link href="/privacy" className="text-sm text-muted-foreground hover:text-[#4F143F] transition-colors">
+              <Link href="/privacy" className="text-sm text-muted-foreground hover:text-purple-600 transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-sm text-muted-foreground hover:text-[#4F143F] transition-colors">
+              <Link href="/terms" className="text-sm text-muted-foreground hover:text-purple-600 transition-colors">
                 Terms of Service
               </Link>
-              <Link href="/shipping" className="text-sm text-muted-foreground hover:text-[#4F143F] transition-colors">
+              <Link href="/shipping" className="text-sm text-muted-foreground hover:text-purple-600 transition-colors">
                 Shipping Policy
               </Link>
             </div>

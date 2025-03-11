@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <Link
             href="/"
-            className="text-2xl font-bold bg-gradient-to-r from-[#5C1749] to-[#E23288] bg-clip-text text-transparent"
+            className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-teal-500 hover:from-purple-700 hover:to-teal-600 bg-clip-text text-transparent"
           >
             GuardianRing
           </Link>
@@ -40,13 +40,10 @@ export default function Navbar() {
             <Link href="/#features" className="text-foreground/80 hover:text-foreground transition-colors">
               Features
             </Link>
-            <Link href="/#how-it-works" className="text-foreground/80 hover:text-foreground transition-colors">
-              How It Works
-            </Link>
             <Link href="/#team" className="text-foreground/80 hover:text-foreground transition-colors">
               Our Team
             </Link>
-            <Link className="p-2 rounded-lg bg-[#4F143F] hover:bg-[#61174c] text-white font-semibold" href={"/login"}>Login/Register</Link>
+            <Link className="p-2 rounded-lg bg-gradient-to-r from-purple-600 to-teal-500 hover:from-purple-700 hover:to-teal-600 text-white font-semibold" href={"/login"}>Login/Register</Link>
           </nav>
 
           {/* Mobile Menu Button */}

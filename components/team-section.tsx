@@ -4,25 +4,28 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { Linkedin, Twitter, Mail } from "lucide-react"
 import Sayan from "@/assets/team/Sayan.jpg"
+import Shreyansh from "@/assets/team/Shreyansh.png"
+import Srajan from "@/assets/team/Srajan.png"
+import WomenSafety from "@/assets/team/WomenSafety.jpg"
 
 const team = [
   {
     name: "Sayan Dutta",
     role: "Co-founder",
     bio: "Former security expert with 15+ years of experience in personal safety technology.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: Sayan,
   },
   {
     name: "Srajan Kumar Gupta",
     role: "Co-founder",
     bio: "Hardware engineer specializing in wearable technology and IoT devices.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: Srajan,
   },
   {
     name: "Shreyansh Agrawal",
     role: "Co-founder",
     bio: "Award-winning jewelry designer focused on combining aesthetics with functionality.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: Shreyansh,
   },
 ]
 
@@ -49,7 +52,7 @@ export default function TeamSection() {
               className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-[450px] mx-2"
             >
               <div className="relative h-64 overflow-hidden">
-                <Image src={Sayan} alt={member.name} className="object-fit" />
+                <Image src={member.image} alt={member.name} className="object-fit" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <div className="p-6">
@@ -72,27 +75,26 @@ export default function TeamSection() {
           ))}
         </div>
 
-        <div className="mt-20 bg-[#92457f]dark:bg-[#92457f]/10 rounded-2xl p-8 md:p-12">
+        <div className="mt-20 bg-purple-50 dark:bg-purple-900/10 rounded-2xl p-8 md:p-12">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Join Our Mission</h3>
               <p className="text-lg text-muted-foreground mb-6">
                 We are always looking for passionate individuals who share our commitment to creating innovative safety
-                solutions. Check out our open positions and become part of a team thats making a difference.
+                solutions. Check out our open positions and become part of a team that is making a difference.
               </p>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-gradient-to-r from-[#92457f] to-[#EC74AF] hover:from-[#92457f] hover:to-[#eb75ae] text-white px-6 py-3 rounded-lg font-medium"
+                className="bg-gradient-to-r from-purple-600 to-teal-500 hover:from-purple-700 hover:to-teal-600 text-white px-6 py-3 rounded-lg font-medium"
               >
                 View Open Positions
               </motion.button>
             </div>
             <div className="relative h-64 rounded-xl overflow-hidden">
               <Image
-                src=""
+                src={WomenSafety}
                 alt="Team working together"
-                fill
                 className="object-cover"
               />
             </div>

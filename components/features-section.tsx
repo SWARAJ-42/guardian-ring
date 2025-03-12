@@ -4,6 +4,8 @@ import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { MapPin, Heart, AlertCircle, Mic2, BellIcon } from "lucide-react"
 import { BsMagic } from "react-icons/bs"
+import ring from "@/assets/hero/ring.png"
+import Image from "next/image"
 
 const features = [
   {
@@ -96,7 +98,7 @@ export default function FeaturesSection() {
 
         <div className="mt-20">
           <div className="bg-gradient-to-r from-purple-600 to-teal-500 rounded-2xl overflow-hidden shadow-xl">
-            <div className="grid md:grid-cols-2 items-center">
+            <div className="grid md:grid-cols-2 items-center justify-center">
               <div className="p-8 md:p-12">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">How GuardianRing Works</h3>
                 <ul className="space-y-4 text-white">
@@ -133,6 +135,15 @@ export default function FeaturesSection() {
                     <p>Optional audio recording captures environmental sounds for evidence</p>
                   </li>
                 </ul>
+              </div>
+              <div>
+                <Image
+                    src={ring}
+                    width={500}
+                    height={500}
+                    alt="product"
+                    className="object-fit"
+                  />
               </div>
             </div>
           </div>

@@ -12,19 +12,19 @@ const team = [
   {
     name: "Sayan Dutta",
     role: "Co-founder",
-    bio: "Former security expert with 15+ years of experience in personal safety technology.",
+    bio: "",
     image: Sayan,
   },
   {
     name: "Srajan Kumar Gupta",
     role: "Co-founder",
-    bio: "Hardware engineer specializing in wearable technology and IoT devices.",
+    bio: "",
     image: Srajan,
   },
   {
     name: "Shreyansh Agrawal",
     role: "Co-founder",
-    bio: "Award-winning jewelry designer focused on combining aesthetics with functionality.",
+    bio: "",
     image: Shreyansh,
   },
 ]

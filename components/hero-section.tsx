@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { ArrowRight, Shield, MapPin, Bell, Smartphone } from "lucide-react"
 import ring from "@/assets/hero/ring.png"
-import video from "@/assets/hero/ring.gif"
+import video from "@/assets/hero/ring_black.gif"
 
 export default function HeroSection() {
   const ringRef = useRef<HTMLDivElement>(null)

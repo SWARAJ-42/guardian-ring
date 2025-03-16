@@ -14,18 +14,21 @@ const team = [
     role: "Co-founder",
     bio: "",
     image: Sayan,
+    linkedin: "https://www.linkedin.com/in/sayan-dutta-551931256"
   },
   {
     name: "Srajan Kumar Gupta",
     role: "Co-founder",
     bio: "",
     image: Srajan,
+    linkedin: "https://www.linkedin.com/in/srajan-kumar-gupta-9a150025a"
   },
   {
     name: "Shreyansh Agrawal",
     role: "Co-founder",
     bio: "",
     image: Shreyansh,
+    linkedin: "https://www.linkedin.com/in/shreyansh-agrawal-858948251"
   },
 ]
 
@@ -60,7 +63,7 @@ export default function TeamSection() {
                 <p className="text-sm text-[#92457f] dark:text-[#92457f] font-medium mb-3">{member.role}</p>
                 <p className="text-muted-foreground mb-4">{member.bio}</p>
                 <div className="flex space-x-3">
-                  <a href="#" className="text-gray-500 hover:text-[#92457f] transition-colors">
+                  <a href={member.linkedin} className="text-gray-500 hover:text-[#92457f] transition-colors">
                     <Linkedin size={18} />
                   </a>
                   <a href="#" className="text-gray-500 hover:text-[#92457f] transition-colors">
